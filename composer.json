@@ -1,0 +1,34 @@
+{
+    "name": "cosyphp/laravel-admin-echarts",
+    "description": "laravel-admin的echarts统计图表扩展包",
+    "type": "library",
+    "keywords": ["laravel-admin", "统计图表", "echarts"],
+    "homepage": "https://github.com/cosyphp/laravel-admin-echarts.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "王振凯",
+            "email": "cosyphp@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\ECharts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\ECharts\\EChartsServiceProvider"
+            ]
+
+        }
+    }
+}
