@@ -22,7 +22,7 @@ class EChartsServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
             $this->publishes(
-                [$assets => public_path('vendor\\laravel-admin-ext\\echarts')],
+                [$assets => public_path('vendor/laravel-admin-ext/echarts')],
                 'laravel-admin-echarts'
             );
         }
